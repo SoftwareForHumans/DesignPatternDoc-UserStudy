@@ -19,3 +19,4 @@ This repository contains an experimental package for an empirical study conducte
    > - Group - 0 if that data row corresponds to someone from the control group or 1 if it does not
    > - TotalTime - The time (in seconds) spent during the entire experiment 
  - `syntax.sps` - The SPSS syntax that can be used to obtain the experiment box-plots and the MW/t-tests
+ - `pattern_instances.xml` - The Design-Pattern-Doc persisted documentation which is used for the experimental group. The plugin generates a new file on the location: "..\.IntelliJIdea{version}\config\options" if it does not find that file on this directory. Should be overrided by the provided file to replicate Task2.
