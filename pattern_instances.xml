@@ -1,0 +1,310 @@
+<application>
+  <component name="PatternInstances">
+    <option name="projectsPersistedStateByProjectName">
+      <map>
+        <entry key="Task2">
+          <value>
+            <ProjectPersistedState>
+              <option name="patternInstanceById">
+                <map>
+                  <entry key="wvGRMisFkj">
+                    <value>
+                      <PatternInstance>
+                        <option name="intent" value="" />
+                        <option name="objectRoles">
+                          <map>
+                            <entry key="Command">
+                              <value>
+                                <set>
+                                  <option value="Command" />
+                                </set>
+                              </value>
+                            </entry>
+                            <entry key="Light">
+                              <value>
+                                <set>
+                                  <option value="Receiver" />
+                                </set>
+                              </value>
+                            </entry>
+                            <entry key="RemoteControl">
+                              <value>
+                                <set>
+                                  <option value="Invoker" />
+                                </set>
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                        <option name="patternName" value="Command" />
+                        <option name="patternParticipants">
+                          <set>
+                            <PatternParticipant>
+                              <option name="object" value="Command" />
+                              <option name="role" value="Command" />
+                            </PatternParticipant>
+                            <PatternParticipant>
+                              <option name="object" value="Light" />
+                              <option name="role" value="Receiver" />
+                            </PatternParticipant>
+                            <PatternParticipant>
+                              <option name="object" value="RemoteControl" />
+                              <option name="role" value="Invoker" />
+                            </PatternParticipant>
+                          </set>
+                        </option>
+                        <option name="roleObjects">
+                          <map>
+                            <entry key="Command">
+                              <value>
+                                <set>
+                                  <option value="Command" />
+                                </set>
+                              </value>
+                            </entry>
+                            <entry key="Concrete Command">
+                              <value>
+                                <set />
+                              </value>
+                            </entry>
+                            <entry key="Invoker">
+                              <value>
+                                <set>
+                                  <option value="RemoteControl" />
+                                </set>
+                              </value>
+                            </entry>
+                            <entry key="Receiver">
+                              <value>
+                                <set>
+                                  <option value="Light" />
+                                </set>
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </PatternInstance>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </ProjectPersistedState>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="supportedDesignPatterns">
+      <set>
+        <DesignPattern>
+          <option name="name" value="Abstract Factory" />
+          <option name="roles">
+            <set>
+              <option value="Abstract Factory" />
+              <option value="Abstract Product" />
+              <option value="Concrete Factory" />
+              <option value="Product" />
+            </set>
+          </option>
+          <option name="rolesLinks">
+            <list>
+              <RolesLink>
+                <option name="linkType" value="inherits" />
+                <option name="role1" value="Concrete Factory" />
+                <option name="role2" value="Abstract Factory" />
+              </RolesLink>
+              <RolesLink>
+                <option name="linkType" value="inherits" />
+                <option name="role1" value="Product" />
+                <option name="role2" value="Abstract Product" />
+              </RolesLink>
+              <RolesLink>
+                <option name="linkType" value="creates" />
+                <option name="role1" value="Concrete Factory" />
+                <option name="role2" value="Product" />
+              </RolesLink>
+              <RolesLink>
+                <option name="linkType" value="uses" />
+                <option name="role1" value="Concrete Factory" />
+                <option name="role2" value="Abstract Product" />
+              </RolesLink>
+            </list>
+          </option>
+        </DesignPattern>
+        <DesignPattern>
+          <option name="name" value="Bridge" />
+          <option name="roles">
+            <set>
+              <option value="Abstraction" />
+              <option value="Concrete Implementor" />
+              <option value="Implementor" />
+              <option value="Refined Abstraction" />
+            </set>
+          </option>
+          <option name="rolesLinks">
+            <list>
+              <RolesLink>
+                <option name="linkType" value="inherits" />
+                <option name="role1" value="Refined Abstraction" />
+                <option name="role2" value="Abstraction" />
+              </RolesLink>
+              <RolesLink>
+                <option name="linkType" value="inherits" />
+                <option name="role1" value="Concrete Implementor" />
+                <option name="role2" value="Implementor" />
+              </RolesLink>
+              <RolesLink>
+                <option name="linkType" value="has" />
+                <option name="role1" value="Abstraction" />
+                <option name="role2" value="Implementor" />
+              </RolesLink>
+              <RolesLink>
+                <option name="linkType" value="calls" />
+                <option name="role1" value="Refined Abstraction" />
+                <option name="role2" value="Implementor" />
+              </RolesLink>
+            </list>
+          </option>
+        </DesignPattern>
+        <DesignPattern>
+          <option name="name" value="Builder" />
+          <option name="roles">
+            <set>
+              <option value="Builder" />
+              <option value="Concrete Builder" />
+              <option value="Director" />
+              <option value="Product" />
+            </set>
+          </option>
+          <option name="rolesLinks">
+            <list>
+              <RolesLink>
+                <option name="linkType" value="has" />
+                <option name="role1" value="Director" />
+                <option name="role2" value="Builder" />
+              </RolesLink>
+              <RolesLink>
+                <option name="linkType" value="calls" />
+                <option name="role1" value="Director" />
+                <option name="role2" value="Builder" />
+              </RolesLink>
+              <RolesLink>
+                <option name="linkType" value="inherits" />
+                <option name="role1" value="Concrete Builder" />
+                <option name="role2" value="Builder" />
+              </RolesLink>
+              <RolesLink>
+                <option name="linkType" value="creates" />
+                <option name="role1" value="Concrete Builder" />
+                <option name="role2" value="Product" />
+              </RolesLink>
+            </list>
+          </option>
+        </DesignPattern>
+        <DesignPattern>
+          <option name="name" value="Command" />
+          <option name="roles">
+            <set>
+              <option value="Command" />
+              <option value="Concrete Command" />
+              <option value="Invoker" />
+              <option value="Receiver" />
+            </set>
+          </option>
+          <option name="rolesLinks">
+            <list>
+              <RolesLink>
+                <option name="linkType" value="inherits" />
+                <option name="role1" value="Concrete Command" />
+                <option name="role2" value="Command" />
+              </RolesLink>
+              <RolesLink>
+                <option name="linkType" value="has" />
+                <option name="role1" value="Concrete Command" />
+                <option name="role2" value="Receiver" />
+              </RolesLink>
+              <RolesLink>
+                <option name="linkType" value="calls" />
+                <option name="role1" value="Concrete Command" />
+                <option name="role2" value="Receiver" />
+              </RolesLink>
+              <RolesLink>
+                <option name="linkType" value="has" />
+                <option name="role1" value="Invoker" />
+                <option name="role2" value="Command" />
+              </RolesLink>
+              <RolesLink>
+                <option name="linkType" value="calls" />
+                <option name="role1" value="Invoker" />
+                <option name="role2" value="Command" />
+              </RolesLink>
+            </list>
+          </option>
+        </DesignPattern>
+        <DesignPattern>
+          <option name="name" value="Observer" />
+          <option name="roles">
+            <set>
+              <option value="Concrete Observer" />
+              <option value="Observer" />
+              <option value="Subject" />
+            </set>
+          </option>
+          <option name="rolesLinks">
+            <list>
+              <RolesLink>
+                <option name="linkType" value="inherits" />
+                <option name="role1" value="Concrete Observer" />
+                <option name="role2" value="Observer" />
+              </RolesLink>
+              <RolesLink>
+                <option name="linkType" value="calls" />
+                <option name="role1" value="Concrete Observer" />
+                <option name="role2" value="Subject" />
+              </RolesLink>
+              <RolesLink>
+                <option name="linkType" value="references" />
+                <option name="role1" value="Subject" />
+                <option name="role2" value="Observer" />
+              </RolesLink>
+            </list>
+          </option>
+        </DesignPattern>
+        <DesignPattern>
+          <option name="name" value="Visitor" />
+          <option name="roles">
+            <set>
+              <option value="Concrete Element" />
+              <option value="Concrete Visitor" />
+              <option value="Element" />
+              <option value="Visitor" />
+            </set>
+          </option>
+          <option name="rolesLinks">
+            <list>
+              <RolesLink>
+                <option name="linkType" value="inherits" />
+                <option name="role1" value="Concrete Element" />
+                <option name="role2" value="Element" />
+              </RolesLink>
+              <RolesLink>
+                <option name="linkType" value="inherits" />
+                <option name="role1" value="Concrete Visitor" />
+                <option name="role2" value="Visitor" />
+              </RolesLink>
+              <RolesLink>
+                <option name="linkType" value="references" />
+                <option name="role1" value="Element" />
+                <option name="role2" value="Visitor" />
+              </RolesLink>
+              <RolesLink>
+                <option name="linkType" value="references" />
+                <option name="role1" value="Visitor" />
+                <option name="role2" value="Concrete Element" />
+              </RolesLink>
+            </list>
+          </option>
+        </DesignPattern>
+      </set>
+    </option>
+  </component>
+</application>
